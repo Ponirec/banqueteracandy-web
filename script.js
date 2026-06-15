@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '569XXXXXXXX';
+const WHATSAPP_NUMBER = '56954452333';
 const GENERAL_MESSAGE = 'Hola, quiero cotizar un servicio de banquetería. ¿Me pueden ayudar?';
 
 const products = [
@@ -32,7 +32,7 @@ function renderProducts() {
           <h3>${product.name}</h3>
           <p>${product.description}</p>
           <div class="price">${product.price}</div>
-          <a class="btn btn-primary" href="${whatsappUrl(message)}" target="_blank" rel="noopener">Cotizar producto</a>
+          <a class="btn btn-primary" href="${whatsappUrl(message)}" target="_blank" rel="noopener">Consultar por WhatsApp</a>
         </div>
       </article>`;
   }).join('');
