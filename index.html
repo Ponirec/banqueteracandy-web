@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Banquetería artesanal para celebraciones, cumpleaños, reuniones, empresas y eventos familiares en Chile." />
+  <title>Banquetería Artesanal | Catálogo y cotización</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Banquetería Artesanal, inicio">
+        <span class="brand-mark">BA</span>
+        <span>Banquetería Artesanal</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="main-menu">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#packs">Packs</a></li>
+          <li><a href="#como-cotizar">Cómo cotizar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn-primary js-whatsapp-general" href="#" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Sabores preparados a pedido</p>
+          <h1>Banquetería artesanal para tus celebraciones</h1>
+          <p class="hero-text">Tapaditos, empanaditas, quiches, mini pizzas, pastelitos, tortas y más opciones para cumpleaños, reuniones, empresas y eventos familiares.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver productos</a>
+            <a class="btn btn-secondary js-whatsapp-general" href="#" target="_blank" rel="noopener">Cotizar ahora</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Mesa de banquetería artesanal">
+          <img src="img/placeholder.svg" alt="Ilustración cálida de una mesa de banquetería" />
+          <div class="hero-badge">Dulce · Salado · Eventos</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="productos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Productos para cotizar</h2>
+          <p>Elige una categoría y solicita valores según cantidad, fecha y requerimientos de tu evento.</p>
+        </div>
+
+        <div class="filters" aria-label="Filtros de productos">
+          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-btn" type="button" data-filter="salados">Salados</button>
+          <button class="filter-btn" type="button" data-filter="dulces">Dulces</button>
+          <button class="filter-btn" type="button" data-filter="unidad">Por unidad</button>
+          <button class="filter-btn" type="button" data-filter="packs">Packs</button>
+          <button class="filter-btn" type="button" data-filter="pedido">A pedido</button>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="packs section-pad" id="packs">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Ideas para eventos</p>
+          <h2>Packs sugeridos</h2>
+          <p>Combinaciones referenciales para ayudarte a iniciar tu cotización. El valor final se calcula según cantidad.</p>
+        </div>
+        <div class="pack-grid">
+          <article class="pack-card">
+            <h3>Pack Reunión Pequeña</h3>
+            <p>Opciones saladas prácticas para encuentros familiares o de oficina.</p>
+            <strong>Cotizar según cantidad</strong>
+          </article>
+          <article class="pack-card">
+            <h3>Pack Dulce</h3>
+            <p>Pastelitos surtidos y tortas a pedido para celebraciones especiales.</p>
+            <strong>Cotizar según cantidad</strong>
+          </article>
+          <article class="pack-card">
+            <h3>Pack Cóctel Mixto</h3>
+            <p>Selección dulce y salada para cumpleaños, eventos familiares y empresas.</p>
+            <strong>Cotizar según cantidad</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote section-pad" id="como-cotizar">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Proceso simple</p>
+          <h2>Cómo cotizar</h2>
+          <p class="notice">Los precios pueden variar según cantidad, fecha, entrega y requerimientos especiales.</p>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><div><h3>Elige los productos</h3><p>Revisa el catálogo y selecciona dulces, salados o productos a pedido.</p></div></li>
+          <li><span>2</span><div><h3>Escríbenos por WhatsApp</h3><p>Indica cantidad, fecha del evento, comuna y detalles importantes.</p></div></li>
+          <li><span>3</span><div><h3>Recibe tu cotización</h3><p>Te responderemos con una propuesta personalizada para tu celebración.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="trust section-pad" aria-labelledby="confianza-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Confianza</p>
+          <h2 id="confianza-title">Banquetería pensada para tu evento</h2>
+        </div>
+        <div class="trust-grid">
+          <div>Productos preparados a pedido</div>
+          <div>Atención personalizada</div>
+          <div>Opciones dulces y saladas</div>
+          <div>Ideal para eventos familiares y empresas</div>
+          <div>Cotización según cantidad</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contacto">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Hablemos</p>
+          <h2>Contacto</h2>
+          <p>Datos editables para que tus clientes puedan cotizar rápidamente.</p>
+        </div>
+        <div class="contact-list">
+          <p><strong>WhatsApp:</strong> <a class="js-whatsapp-general" href="#" target="_blank" rel="noopener">+56 9 XXXXXXXX</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/banqueteria_artesanal" target="_blank" rel="noopener">@banqueteria_artesanal</a></p>
+          <p><strong>Correo:</strong> <a href="mailto:contacto@banqueteria.cl">contacto@banqueteria.cl</a></p>
+          <p><strong>Zona:</strong> Chile</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp js-whatsapp-general" href="#" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">WhatsApp</a>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Banquetería Artesanal. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
