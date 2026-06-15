@@ -18,13 +18,13 @@ Abre `index.html` directamente en el navegador o publica estos archivos en cualq
 En `script.js`, cambia la constante:
 
 ```js
-const WHATSAPP_NUMBER = '569XXXXXXXX';
+const WHATSAPP_NUMBER = '56954452333';
 ```
 
 Usa el formato internacional sin `+`, espacios ni guiones. Ejemplo para Chile:
 
 ```js
-const WHATSAPP_NUMBER = '56912345678';
+const WHATSAPP_NUMBER = '56954452333';
 ```
 
 También puedes editar el mensaje general en:
