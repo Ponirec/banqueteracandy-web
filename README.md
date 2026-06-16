@@ -18,20 +18,24 @@ Abre `index.html` directamente en el navegador o publica estos archivos en cualq
 En `script.js`, cambia la constante:
 
 ```js
-const WHATSAPP_NUMBER = '56954452333';
+const WHATSAPP_NUMBER = "56954452333";
 ```
 
 Usa el formato internacional sin `+`, espacios ni guiones. Ejemplo para Chile:
 
 ```js
-const WHATSAPP_NUMBER = '56954452333';
+const WHATSAPP_NUMBER = "56954452333";
 ```
 
-También puedes editar el mensaje general en:
+Los enlaces se generan desde la función reutilizable:
 
 ```js
-const GENERAL_MESSAGE = 'Hola, quiero cotizar un servicio de banquetería. ¿Me pueden ayudar?';
+function buildWhatsAppUrl(message) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 ```
+
+También puedes editar el mensaje general en `script.js` dentro de la configuración de enlaces de WhatsApp.
 
 ## Editar productos
 
