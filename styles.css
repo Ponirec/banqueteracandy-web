@@ -57,7 +57,8 @@ a { color: inherit; text-decoration: none; }
 
 .hero { position: relative; overflow: hidden; }
 .hero::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 500px; height: 500px; border-radius: 50%; background: rgba(244, 184, 198, 0.3); filter: blur(8px); }
-.hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 58px; position: relative; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr); align-items: center; gap: 58px; position: relative; }
+.hero-copy, .hero-card { min-width: 0; }
 .eyebrow { margin: 0 0 12px; color: var(--burgundy-soft); font-weight: 900; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; }
 h1, h2, h3 { margin: 0; line-height: 1.08; letter-spacing: -0.04em; }
 h1 { font-size: clamp(2.55rem, 6vw, 5.4rem); max-width: 760px; }
@@ -67,7 +68,7 @@ h3 { font-size: 1.22rem; }
 .hero-text { font-size: 1.17rem; max-width: 680px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
 .hero-card { position: relative; padding: 12px; border-radius: 34px; background: rgba(255, 255, 255, 0.78); box-shadow: var(--shadow); border: 1px solid rgba(244, 184, 198, 0.28); }
-.hero-card img { border-radius: 24px; width: 100%; height: auto; object-fit: contain; background: var(--cream-deep); box-shadow: 0 16px 34px rgba(139, 58, 74, 0.12); }
+.hero-card img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 24px; background: var(--cream-deep); box-shadow: 0 16px 34px rgba(139, 58, 74, 0.12); }
 
 .section-heading { max-width: 760px; margin-bottom: 32px; }
 .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
