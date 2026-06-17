@@ -7,7 +7,8 @@ Landing page completa tipo catálogo/cotización para La Dulzura de Candy. Está
 - `index.html`: estructura de la landing page, secciones, menú y datos de contacto.
 - `styles.css`: estilos, paleta de colores, responsive y componentes visuales.
 - `script.js`: productos, filtros, menú hamburguesa y enlaces de WhatsApp.
-- `img/placeholder.svg`: imagen placeholder para reemplazar por fotografías reales.
+- `img/collage-hero.jpg`: collage fotográfico usado como imagen principal del hero.
+- `img/placeholder.svg`: imagen placeholder disponible para futuros reemplazos o pruebas.
 - `img/img:logo-dulzura-candy.jpg`: logo principal de La Dulzura de Candy usado en el header y preparado para reutilizarse en el footer.
 
 ## Cómo usar
@@ -74,15 +75,10 @@ Cambia estos valores para adaptar la identidad visual.
 
 ## Editar imágenes
 
-La web usa `img/placeholder.svg` en el hero, `img/img:logo-dulzura-candy.jpg` para la marca y fondos visuales elegantes en las tarjetas. Para agregar fotos reales:
+La web usa `img/collage-hero.jpg` en el hero, `img/img:logo-dulzura-candy.jpg` para la marca y fondos visuales elegantes en las tarjetas. Para cambiar fotos:
 
 1. Guarda las imágenes dentro de la carpeta `img`.
-2. Reemplaza la ruta del hero en `index.html`:
-
-```html
-<img src="img/placeholder.svg" alt="Ilustración cálida de una mesa dulce y salada" />
-```
-
+2. Para reemplazar el collage principal, actualiza la ruta del hero en `index.html` o reemplaza el archivo `img/collage-hero.jpg` manteniendo el mismo nombre.
 3. Si quieres fotos por producto, agrega una propiedad `image` a cada producto en `script.js` y ajusta el renderizado de `.product-visual`.
 
 ### Reemplazar el logo
