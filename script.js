@@ -7,33 +7,99 @@ function buildWhatsAppUrl(message) {
 (() => {
   const GENERAL_MESSAGE = 'Hola, quiero cotizar un servicio de banquetería. ¿Me pueden ayudar?';
 
+  // Catálogo maestro: mantener exactamente 9 productos. No eliminar productos solo porque aún no tengan foto real; usar placeholder mientras se agregan nuevas imágenes.
   const products = [
     {
       name: 'Tapaditos',
       image: 'img/tapaditos.jpg',
       category: 'Salados',
+      price: '$480 c/u',
+      presentation: 'Por unidad',
       tags: ['salados', 'unidad'],
-      description: 'Tapaditos frescos y variados, ideales para eventos familiares, reuniones, cumpleaños y celebraciones.',
-      whatsappMessage: 'Hola, quiero cotizar tapaditos para un evento.'
+      description: 'Pequeños sándwiches ideales para cócteles, reuniones y celebraciones.',
+      whatsappMessage: 'Hola, quiero consultar por Tapaditos para un evento.'
     },
     {
-      name: 'Tortas',
-      image: 'img/tortas.jpg',
-      category: 'Dulces',
-      tags: ['dulces', 'pedido'],
-      description: 'Tortas personalizadas para celebraciones, cumpleaños, matrimonios y eventos especiales.',
-      whatsappMessage: 'Hola, quiero cotizar una torta para un evento.'
+      name: 'Empanaditas',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$450 c/u',
+      presentation: 'Por unidad',
+      tags: ['salados', 'unidad'],
+      description: 'Empanaditas de cóctel perfectas para eventos familiares y empresariales.',
+      whatsappMessage: 'Hola, quiero consultar por Empanaditas para un evento.'
+    },
+    {
+      name: 'Quiche',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$450 c/u',
+      presentation: 'Por unidad',
+      tags: ['salados', 'unidad'],
+      description: 'Porciones individuales de quiche, ideales para mesas de cóctel y coffee break.',
+      whatsappMessage: 'Hola, quiero consultar por Quiche para un evento.'
+    },
+    {
+      name: 'Pizzas mini',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$450 c/u',
+      presentation: 'Por unidad',
+      tags: ['salados', 'unidad'],
+      description: 'Mini pizzas prácticas y sabrosas para compartir en celebraciones y reuniones.',
+      whatsappMessage: 'Hola, quiero consultar por Pizzas mini para un evento.'
+    },
+    {
+      name: 'Chaparritas mini',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$190 c/u',
+      presentation: 'Por unidad',
+      tags: ['salados', 'unidad'],
+      description: 'Mini chaparritas para cócteles, cumpleaños y reuniones informales.',
+      whatsappMessage: 'Hola, quiero consultar por Chaparritas mini para un evento.'
+    },
+    {
+      name: 'Fajitas mini',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$480 c/u',
+      presentation: 'Por unidad',
+      tags: ['salados', 'unidad'],
+      description: 'Mini fajitas ideales para agregar variedad a la mesa salada.',
+      whatsappMessage: 'Hola, quiero consultar por Fajitas mini para un evento.'
+    },
+    {
+      name: 'Sopaipillas mini',
+      image: 'img/placeholder.svg',
+      category: 'Salados',
+      price: '$11.500',
+      presentation: '50 unidades',
+      tags: ['salados', 'packs'],
+      description: 'Sopaipillas mini en formato de 50 unidades, ideales para compartir.',
+      whatsappMessage: 'Hola, quiero consultar por Sopaipillas mini para un evento.'
     },
     {
       name: 'Pastelitos surtidos',
       image: 'img/pastelitos-surtidos.jpg',
       category: 'Dulces',
+      price: '$20.000',
+      presentation: '50 unidades',
       tags: ['dulces', 'packs'],
-      description: 'Pastelitos dulces surtidos, preparados para cócteles, coffee breaks, celebraciones y mesas dulces.',
-      whatsappMessage: 'Hola, quiero cotizar pastelitos surtidos para un evento.'
+      description: 'Variedad de pastelitos dulces surtidos para celebraciones, cumpleaños y eventos.',
+      whatsappMessage: 'Hola, quiero consultar por Pastelitos surtidos para un evento.'
+    },
+    {
+      name: 'Tortas',
+      image: 'img/tortas.jpg',
+      category: 'Dulces',
+      price: 'Desde $17.000',
+      presentation: 'A pedido',
+      tags: ['dulces', 'pedido'],
+      description: 'Tortas preparadas a pedido para cumpleaños, celebraciones familiares y eventos especiales.',
+      whatsappMessage: 'Hola, quiero consultar por Tortas para un evento.'
     }
   ];
-
   function renderProducts() {
     const grid = document.querySelector('#product-grid');
     grid.innerHTML = products.map((product) => {
@@ -43,10 +109,12 @@ function buildWhatsAppUrl(message) {
           <div class="product-body">
             <div class="product-meta">
               <span class="badge">${product.category}</span>
+              <span class="badge badge-soft">${product.presentation}</span>
             </div>
             <h3>${product.name}</h3>
+            <p class="product-price">${product.price}</p>
             <p>${product.description}</p>
-            <a class="btn btn-primary product-quote" href="${buildWhatsAppUrl(product.whatsappMessage)}" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+            <a class="btn btn-primary product-quote" href="${buildWhatsAppUrl(product.whatsappMessage)}" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
         </article>`;
     }).join('');

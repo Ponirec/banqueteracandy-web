@@ -83,8 +83,10 @@ h3 { font-size: 1.22rem; }
 .product-body { padding: 22px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .product-meta { display: flex; flex-wrap: wrap; gap: 8px; }
 .badge { width: fit-content; padding: 6px 10px; border-radius: 999px; background: var(--rose-soft); color: var(--burgundy); font-weight: 850; font-size: 0.82rem; }
+.badge-soft { background: var(--cream-deep); color: var(--coffee); }
 .product-quote { margin-top: auto; }
 .product-card p { color: var(--muted); line-height: 1.6; margin: 0; }
+.product-card .product-price { color: var(--burgundy); font-size: 1.05rem; font-weight: 900; }
 .product-card[hidden] { display: none; }
 
 .packs, .trust { background: rgba(253, 231, 237, 0.52); }
