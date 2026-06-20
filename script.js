@@ -71,7 +71,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Sopaipillas mini',
-      image: 'img/placeholder.svg',
+      image: 'img/sopaipillas.jpg',
       category: 'Salados',
       price: '$11.500',
       presentation: '50 unidades',
