@@ -9,7 +9,7 @@ Landing page completa tipo catálogo/cotización para La Dulzura de Candy. Está
 - `script.js`: productos, filtros, menú hamburguesa y enlaces de WhatsApp.
 - `img/collage-hero.jpg`: collage fotográfico usado como imagen principal del hero.
 - `img/placeholder.svg`: imagen placeholder disponible para futuros reemplazos o pruebas.
-- `img/img:logo-dulzura-candy.jpg`: logo principal de La Dulzura de Candy usado en el header y preparado para reutilizarse en el footer.
+- `img/logodulzura.jpg`: logo principal de La Dulzura de Candy usado en el header y en el hero.
 
 ## Cómo usar
 
@@ -75,7 +75,7 @@ Cambia estos valores para adaptar la identidad visual.
 
 ## Editar imágenes
 
-La web usa `img/collage-hero.jpg` en el hero, `img/img:logo-dulzura-candy.jpg` para la marca y fondos visuales elegantes en las tarjetas. Para cambiar fotos:
+La web usa `img/collage-hero.jpg` como collage del hero, `img/logodulzura.jpg` para la marca en el header y como logo protagonista del hero, además de fondos visuales elegantes en las tarjetas. Para cambiar fotos:
 
 1. Guarda las imágenes dentro de la carpeta `img`.
 2. Para reemplazar el collage principal, actualiza la ruta del hero en `index.html` o reemplaza el archivo `img/collage-hero.jpg` manteniendo el mismo nombre.
@@ -83,12 +83,12 @@ La web usa `img/collage-hero.jpg` en el hero, `img/img:logo-dulzura-candy.jpg` p
 
 ### Reemplazar el logo
 
-El logo principal está referenciado en `img/img:logo-dulzura-candy.jpg`. Para cambiarlo en el futuro, reemplaza ese archivo manteniendo el mismo nombre y ruta. Si prefieres usar otro nombre o formato, actualiza el `src` del logo en `index.html` y conserva un `alt` descriptivo con el nombre `La Dulzura de Candy`.
+El logo principal está referenciado en `img/logodulzura.jpg`. Para cambiarlo en el futuro, reemplaza ese archivo manteniendo el mismo nombre y ruta. Si prefieres usar otro nombre o formato, actualiza el `src` del logo en `index.html` y conserva un `alt` descriptivo con el nombre `La Dulzura de Candy`.
 
 ## Secciones incluidas
 
 - Header responsive con menú hamburguesa.
-- Hero con llamadas a la acción.
+- Hero con el logo protagonista, frase de apoyo, descripción y llamadas a la acción.
 - Catálogo con filtros funcionales.
 - Packs sugeridos sin precios inventados.
 - Pasos para cotizar.
