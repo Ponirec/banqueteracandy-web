@@ -156,11 +156,32 @@ function buildWhatsAppUrl(message) {
     });
   }
 
+  function setupSmoothInternalLinks() {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (event) {
+        const targetId = this.getAttribute('href');
+
+        if (!targetId || targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          event.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     setupFilters();
     setupMenu();
     setupWhatsappLinks();
+    setupSmoothInternalLinks();
     document.querySelector('#year').textContent = new Date().getFullYear();
   });
 })();
