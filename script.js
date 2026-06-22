@@ -105,7 +105,7 @@ function buildWhatsAppUrl(message) {
     grid.innerHTML = products.map((product) => {
       return `
         <article class="product-card" data-tags="${product.tags.join(' ')}">
-          <img class="product-image" src="${product.image}" alt="${product.name} de La Dulzura de Candy" loading="lazy" onerror="this.onerror=null; this.src='img/placeholder.svg';" />
+          <img class="product-image" src="${product.image}" alt="${product.name} de Dulzura Navarrete" loading="lazy" onerror="this.onerror=null; this.src='img/placeholder.svg';" />
           <div class="product-body">
             <div class="product-meta">
               <span class="badge">${product.category}</span>
@@ -171,12 +171,20 @@ function buildWhatsAppUrl(message) {
             behavior: 'smooth',
             block: 'start'
           });
+
+          if (targetId === '#inicio' && window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+          }
         }
       });
     });
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#inicio' && window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+    }
+
     renderProducts();
     setupFilters();
     setupMenu();
