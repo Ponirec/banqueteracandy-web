@@ -21,7 +21,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Empanaditas',
-      image: 'img/placeholder.svg',
+      image: 'img/empanaditas.jpg',
       category: 'Salados',
       price: '$450 c/u',
       presentation: 'Por unidad',
@@ -31,7 +31,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Quiche',
-      image: 'img/placeholder.svg',
+      image: 'img/quiche.jpg',
       category: 'Salados',
       price: '$450 c/u',
       presentation: 'Por unidad',
@@ -41,7 +41,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Pizzas mini',
-      image: 'img/placeholder.svg',
+      image: 'img/pizzas-mini.jpg',
       category: 'Salados',
       price: '$450 c/u',
       presentation: 'Por unidad',
@@ -51,7 +51,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Chaparritas mini',
-      image: 'img/placeholder.svg',
+      image: 'img/chaparritas-mini.jpg',
       category: 'Salados',
       price: '$190 c/u',
       presentation: 'Por unidad',
@@ -61,7 +61,7 @@ function buildWhatsAppUrl(message) {
     },
     {
       name: 'Fajitas mini',
-      image: 'img/placeholder.svg',
+      image: 'img/fajitas-mini.jpg',
       category: 'Salados',
       price: '$480 c/u',
       presentation: 'Por unidad',
@@ -105,7 +105,7 @@ function buildWhatsAppUrl(message) {
     grid.innerHTML = products.map((product) => {
       return `
         <article class="product-card" data-tags="${product.tags.join(' ')}">
-          <img class="product-image" src="${product.image}" alt="${product.name} de La Dulzura de Candy" loading="lazy" />
+          <img class="product-image" src="${product.image}" alt="${product.name} de La Dulzura de Candy" loading="lazy" onerror="this.onerror=null; this.src='img/placeholder.svg';" />
           <div class="product-body">
             <div class="product-meta">
               <span class="badge">${product.category}</span>
