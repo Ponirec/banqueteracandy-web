@@ -69,8 +69,7 @@ h1 { font-size: clamp(1.85rem, 3.7vw, 3.25rem); max-width: 680px; }
 h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
 h3 { font-size: 1.22rem; }
 .hero-text, .section-heading p, .contact-card p, .pack-card p, .steps p { color: var(--muted); line-height: 1.75; }
-.hero-logo { width: 100%; max-width: 360px; height: auto; object-fit: contain; margin: 4px 0 24px; filter: drop-shadow(0 12px 24px rgba(139, 58, 74, 0.14)); }
-.hero-brand { margin: 4px 0 20px; color: var(--burgundy); font-size: clamp(2.45rem, 6vw, 5rem); font-weight: 950; line-height: 0.95; letter-spacing: -0.07em; text-wrap: balance; }
+.hero-logo { width: 100%; max-width: 390px; height: auto; object-fit: contain; margin: 4px 0 24px; filter: drop-shadow(0 12px 24px rgba(139, 58, 74, 0.14)); }
 .hero-text { font-size: 1.17rem; max-width: 680px; margin-top: 18px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
 .hero-card { position: relative; padding: 12px; border-radius: 34px; background: rgba(255, 255, 255, 0.78); box-shadow: var(--shadow); border: 1px solid rgba(244, 184, 198, 0.28); }
@@ -125,7 +124,7 @@ h3 { font-size: 1.22rem; }
   .navbar { min-height: 70px; gap: 14px; }
   .brand-logo { max-height: 48px; }
   .brand-name { font-size: 1rem; }
-  .hero-logo { max-width: 250px; margin-bottom: 18px; }
+  .hero-logo { max-width: 260px; margin-bottom: 18px; }
   .nav-panel { top: 70px; }
   .product-grid, .pack-grid, .trust-grid { grid-template-columns: 1fr; }
   .floating-whatsapp { left: 16px; right: 16px; text-align: center; }
