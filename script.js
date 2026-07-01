@@ -154,6 +154,10 @@ function buildWhatsAppUrl(message) {
     document.querySelectorAll('.js-whatsapp-general').forEach((link) => {
       link.setAttribute('href', buildWhatsAppUrl(GENERAL_MESSAGE));
     });
+
+    document.querySelectorAll('.js-whatsapp-pack').forEach((link) => {
+      link.setAttribute('href', buildWhatsAppUrl(link.dataset.whatsappMessage));
+    });
   }
 
   function setupSmoothInternalLinks() {
