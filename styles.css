@@ -95,8 +95,8 @@ h3 { font-size: 1.22rem; }
 .product-card[hidden] { display: none; }
 
 .packs, .trust { background: rgba(253, 231, 237, 0.52); }
-.pack-card { padding: 26px; }
-.pack-card strong { display: inline-block; margin-top: 16px; color: var(--burgundy); }
+.pack-card { padding: 26px; display: flex; flex-direction: column; align-items: flex-start; }
+.pack-quote { margin-top: auto; min-height: 44px; padding-inline: 18px; }
 .quote-grid { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 42px; align-items: start; }
 .notice { padding: 18px; border-left: 4px solid var(--rose); background: #fff8f3; border-radius: 16px; color: var(--muted); line-height: 1.65; }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
@@ -147,6 +147,7 @@ h3 { font-size: 1.22rem; }
   .hero-actions { justify-content: center; width: 100%; margin-top: 28px; }
   .nav-panel { top: 70px; }
   .product-grid, .pack-grid, .trust-grid { grid-template-columns: 1fr; }
+  .pack-quote { width: 100%; }
   .floating-whatsapp { left: auto; right: 16px; bottom: 16px; padding: 12px 16px; font-size: 0.92rem; text-align: center; }
 }
 
